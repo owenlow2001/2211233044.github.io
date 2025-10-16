@@ -2,21 +2,118 @@
 <html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
-  <title>我的个人网站</title>
+  <title>卢俊峰的个人网站</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     body {
-      font-family: "Microsoft YaHei", sans-serif;
-      text-align: center;
-      padding: 80px;
-      background-color: #f5f7fa;
+      margin: 0;
+      font-family: "Segoe UI", "Microsoft YaHei", sans-serif;
+      background-color: #f7f9fc;
+      color: #333;
+      line-height: 1.6;
     }
-    h1 { color: #333; }
-    p { color: #666; }
+
+    header {
+      background: linear-gradient(120deg, #007bff, #00b4d8);
+      color: white;
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.8em;
+      font-weight: 700;
+    }
+
+    header p {
+      margin-top: 10px;
+      font-size: 1.2em;
+      opacity: 0.9;
+    }
+
+    main {
+      max-width: 800px;
+      margin: 50px auto;
+      background: white;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    section {
+      margin-bottom: 40px;
+    }
+
+    h2 {
+      color: #007bff;
+      border-left: 4px solid #007bff;
+      padding-left: 10px;
+      margin-bottom: 15px;
+    }
+
+    a {
+      color: #007bff;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #e9ecef;
+      color: #555;
+      font-size: 0.9em;
+    }
+
+    .photo {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 15px;
+      border: 3px solid white;
+      box-shadow: 0 0 8px rgba(0,0,0,0.2);
+    }
   </style>
 </head>
 <body>
-  <h1>你好，我是卢俊峰 👋</h1>
-  <p>欢迎来到我的个人网站！</p>
-  <p>这是我用 GitHub Pages 部署的第一个网页。</p>
+
+  <header>
+    <img src="https://avatars.githubusercontent.com/u/9919?v=4" alt="头像" class="photo">
+    <h1>你好，我是卢俊峰 👋</h1>
+    <p>智能制造工程 | 物联网爱好者 | 创客精神</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>关于我</h2>
+      <p>我是一名智能制造工程专业的大学生，对物联网技术、嵌入式系统和智能硬件有浓厚兴趣。熟悉 Arduino 与 ESP32 的开发，喜欢动手实现有趣的创意项目。</p>
+    </section>
+
+    <section>
+      <h2>项目经历</h2>
+      <ul>
+        <li><strong>ESP32 无线物联网实验</strong> —— 实现基于 TCP/IP 的无线通信，远程控制传感器。</li>
+        <li><strong>智能避障小车</strong> —— 利用超声波传感器和电机控制算法实现自动避障。</li>
+        <li><strong>蓝牙耳机品牌运营</strong> —— 主打学生党市场，设计小红书引流方案与产品文案。</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>联系方式</h2>
+      <p>📧 邮箱：<a href="mailto:example@email.com">example@email.com</a></p>
+      <p>💬 小红书 / 微信 / QQ：可在主页留言获取</p>
+      <p>🌐 GitHub：<a href="https://github.com/你的用户名" target="_blank">github.com/你的用户名</a></p>
+    </section>
+  </main>
+
+  <footer>
+    © 2025 卢俊峰 | 由 GitHub Pages 驱动
+  </footer>
+
 </body>
 </html>
